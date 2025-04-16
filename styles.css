@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f6ff;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #e6f0fa;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 28px;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Expert Tax Planning Section */
+.expert-tax {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.expert-tax img {
+    width: 350px;
+    border-radius: 25px;
+}
+
+.expert-tax-text {
+    max-width: 50%;
+}
+
+.expert-tax-text h2 {
+    font-size: 28px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.expert-tax-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.expert-tax-text button {
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Our Services Section */
+.our-services {
+    padding: 50px;
+    text-align: center;
+}
+
+.our-services h2 {
+    font-size: 28px;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: left;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.service-card ul {
+    list-style: none;
+    font-size: 16px;
+    color: #666;
+}
+
+.service-card ul li {
+    margin-bottom: 10px;
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Add space between the cards */
+    cursor: pointer; /* Makes the card appear clickable */
+}
+
+.service-card img {
+    width: 100%; /* Makes the image fill the width of the card */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adds space between the image and the text */
+}
+
+.service-card h3 {
+    margin-top: 10px; /* Adds space between the image and the heading */
+}
+
+.service-card p {
+    margin-top: 10px; /* Adds space between the heading and paragraph */
+}
+
+/* Hover effect for Service Cards */
+.service-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow on hover */
+}
+
+
+
+/* About Us Section */
+.about-us {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.about-us img {
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 28px;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+    font-size: 16px;
+}
+.why-choose-us {
+    padding: 50px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.why-choose-us:hover {
+    transform: scale(1.05); /* Slightly enlarge the section */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: scale(1.05); /* Slightly enlarge each card on hover */
+}
+
